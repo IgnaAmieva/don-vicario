@@ -3,7 +3,7 @@
 import { X, Minus, Plus, Trash2, MessageCircle } from "lucide-react";
 import { useCart } from "./CartContext";
 
-const WHATSAPP_NUMBER = "5492615000000";
+const WHATSAPP_NUMBER = "5492622254770";
 
 export default function CartSidebar() {
   const { items, isOpen, closeCart, removeItem, updateQuantity, total } = useCart();
