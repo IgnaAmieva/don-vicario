@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* ===== Don Vicario — Custom Theme (Tailwind v4) ===== */
+@theme {
+  --color-cream: #F5F0E8;
+  --color-cream-dark: #EDE5D8;
+  --color-gold: #C9A84C;
+  --color-gold-light: #D4B965;
+  --color-wine: #6B1A2A;
+  --color-wine-dark: #4A1019;
+  --color-sky: #5BA4CF;
+  --color-dark: #1A1A1A;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Raleway", system-ui, sans-serif;
+}
+
+/* ===== Base ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-dark);
+  background-color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: white;
+}
+
+/* ===== Scroll offset for anchor links (navbar height) ===== */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* ===== Skip link ===== */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  z-index: 9999;
+  background: var(--color-wine);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0 0 0.75rem 0.75rem;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+/* ===== Gold divider ===== */
+.gold-divider {
+  width: 60px;
+  height: 2px;
+  background: var(--color-gold);
+  margin: 1rem auto;
+}
+
+/* ===== Animations ===== */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
