@@ -78,6 +78,11 @@ section[id] {
   animation: fade-in-up 0.8s ease-out both;
 }
 
+@keyframes spinY {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-in-up {
     animation: none;
