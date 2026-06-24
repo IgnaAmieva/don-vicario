@@ -82,10 +82,10 @@ function Carousel({
   };
 
   return (
-    <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden mb-5 group/carousel">
+    <div className="relative w-full rounded-lg overflow-hidden mb-5 group/carousel bg-cream">
       {/* Image */}
       <div
-        className="relative w-full h-full cursor-pointer group/img"
+        className="relative w-full h-56 sm:h-64 cursor-pointer group/img"
         onClick={() => onImageClick(images, current)}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
@@ -94,7 +94,7 @@ function Carousel({
           src={images[current]}
           alt="Producto"
           fill
-          className="object-cover transition-transform duration-300 group-hover/img:scale-105"
+          className="object-contain transition-transform duration-300 group-hover/img:scale-105"
           sizes="(max-width: 640px) 100vw, 280px"
         />
         <div className="absolute inset-0 bg-black/0 group-hover/img:bg-black/20 transition-colors duration-300 flex items-center justify-center">

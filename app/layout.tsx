@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Raleway } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -20,6 +20,11 @@ const raleway = Raleway({
   variable: "--font-sans",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://donvicario.vercel.app"),
