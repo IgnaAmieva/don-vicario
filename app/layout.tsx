@@ -31,11 +31,15 @@ export const metadata: Metadata = {
   title: "Don Vicario — Edición Limitada",
   description:
     "Vino Malbec de edición limitada del Valle de Tunuyán, Mendoza. Producción artesanal argentina de alta gama.",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: {
+    icon: "/images/Huella_DonVicario.png",
+    apple: "/images/Huella_DonVicario.png",
+  },
   openGraph: {
     title: "Don Vicario — Edición Limitada",
     description:
-      "Malbec artesanal del Valle de Tunuyán, Mendoza. Producción limitada.",
+      "Malbec Edición Limitada. Valle de Tunuyán, Mendoza, Argentina.",
+    images: ["/images/foto-vino.jpeg"],
     url: "/",
     siteName: "Don Vicario",
     locale: "es_AR",
