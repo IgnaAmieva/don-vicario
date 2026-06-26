@@ -33,7 +33,6 @@ const PRODUCTS = [
     price: 30000,
     label: "Botella + Copa",
     images: [
-      "/images/combo-brindis/IMG_3273.jpeg",
       "/images/combo-brindis/IMG_3271.jpeg",
       "/images/combo-brindis/IMG_3266.jpeg",
       "/images/combo-brindis/IMG_3306.jpeg",
@@ -288,7 +287,7 @@ ${p.option} x${qty} → $${total.toLocaleString("es-AR")}
                 <div className="w-12 h-0.5 bg-gold mb-10" />
                 <blockquote className="border-l-4 border-gold pl-6 py-2">
                   <p className="font-serif text-xl lg:text-2xl italic text-dark/80 leading-relaxed">
-                    &ldquo;Esta viña nació en homenaje a quien me enseñó a creer, a soñar
+                    &ldquo;Este vino nació en homenaje a quien me enseñó a creer, a soñar
                     y a amar la música. Como el sonido de un violín en casa, está pensado
                     para acompañar mesas largas, abrazos sinceros y momentos que se
                     vuelven recuerdo.&rdquo;
